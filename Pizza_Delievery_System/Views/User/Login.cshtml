@@ -1,0 +1,97 @@
+﻿@model Pizza_Delievery_System.Models.Login
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="bg-light min-vh-100 d-flex align-items-center py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10 col-xl-9">
+
+                <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+                    <div class="row g-0">
+
+                        <!-- Left Side: Brand Hero Panel (Red Theme) -->
+                        <div class="col-lg-5 bg-danger text-white d-flex flex-column justify-content-between p-4 p-md-5">
+                            <div>
+                                <a asp-controller="Home" asp-action="Index" class="text-white text-decoration-none fs-4 fw-bold">
+                                    <i class="bi bi-pie-chart-fill me-2"></i>PizzaHouse
+                                </a>
+                            </div>
+
+                            <div class="my-5">
+                                <h1 class="display-6 fw-bold mb-3">Welcome back to PizzaHouse!</h1>
+                                <p class="text-white-50">Sign in to manage your orders, check your rewards, and reorder your favorite meals with one click.</p>
+                            </div>
+
+                            <div class="d-flex align-items-center gap-2 text-white-50 small">
+                                <i class="bi bi-shield-check fs-5 text-white"></i>
+                                <span>Fast, Safe & Secure Login</span>
+                            </div>
+                        </div>
+
+                        <!-- Right Side: Login Form -->
+                        <div class="col-lg-7 bg-white p-4 p-md-5">
+
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <div>
+                                    <h3 class="fw-bold mb-1">Sign In</h3>
+                                    <p class="text-muted small mb-0">Enter your email and password to access your account</p>
+                                </div>
+                                <a asp-controller="Home" asp-action="Index" class="btn btn-outline-secondary btn-sm rounded-circle p-0 d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">
+                                    <i class="bi bi-x-lg"></i>
+                                </a>
+                            </div>
+
+                            <form asp-action="Login" method="post">
+                                <div asp-validation-summary="ModelOnly" class="alert alert-danger py-2 small mb-3"></div>
+
+                                <!-- Email -->
+                                <div class="form-floating mb-3">
+                                    <input asp-for="Email" class="form-control" placeholder="asjad@gmail.com" id="loginEmailInput" />
+                                    <label for="loginEmailInput">
+                                        <i class="bi bi-envelope text-danger me-1"></i> Email Address
+                                    </label>
+                                    <span asp-validation-for="Email" class="text-danger small"></span>
+                                </div>
+
+                                <!-- Password -->
+                                <div class="form-floating mb-4">
+                                    <input asp-for="Password" type="password" class="form-control" placeholder="123456789" id="loginPasswordInput" />
+                                    <label for="loginPasswordInput">
+                                        <i class="bi bi-lock text-danger me-1"></i> Password
+                                    </label>
+                                    <span asp-validation-for="Password" class="text-danger small"></span>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <button type="submit" class="btn btn-danger btn-lg w-100 rounded-3 fw-bold py-3 shadow-sm mb-3">
+                                    Sign In <i class="bi bi-box-arrow-in-right ms-2"></i>
+                                </button>
+                            </form>
+
+                            <div class="text-center pt-2 border-top">
+                                <p class="text-muted small mb-0">
+                                    Don't have an account?
+                                    <a asp-action="Register" asp-controller="User" class="text-danger fw-bold text-decoration-none ms-1">
+                                        Create Account
+                                    </a>
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,102 @@
+﻿@* @model Pizza_Delievery_System.Models.Pizza
+
+@{
+    ViewData["Title"] = Model?.Name ?? "Pizza Details";
+}
+
+<div class="bg-light min-vh-100 py-5">
+    <div class="container">
+
+        <!-- Navigation Breadcrumb -->
+        <div class="mb-4">
+            <a asp-controller="Home" asp-action="Index" class="text-danger text-decoration-none fw-semibold small">
+                <i class="bi bi-arrow-left me-1"></i> Back to Menu
+            </a>
+        </div>
+
+        <!-- Product Card -->
+        <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+            <div class="card-body p-4 p-lg-5 bg-white">
+                <div class="row g-4 align-items-center">
+
+                    <!-- Left Column: Image / Icon Preview -->
+                    <div class="col-12 col-lg-6 text-center">
+                        <div class="position-relative p-4 bg-light rounded-4 border d-flex align-items-center justify-content-center" style="min-height: 380px;">
+                            @if (!string.IsNullOrEmpty(Model?.ImageUrl))
+                            {
+                                <img src="@Model.ImageUrl" class="img-fluid rounded-3 shadow-sm object-fit-cover" style="max-height: 350px;" alt="@Model.Name" />
+                            }
+                            else
+                            {
+                                <div class="bg-danger bg-opacity-10 text-danger rounded-circle d-flex align-items-center justify-content-center" style="width: 180px; height: 180px;">
+                                    <i class="bi bi-pie-chart-fill display-1"></i>
+                                </div>
+                            }
+
+                            <!-- Availability Badge -->
+                            <div class="position-absolute top-0 end-0 m-3">
+                                @if (Model != null && Model.IsAvailable)
+                                {
+                                    <span class="badge bg-success fs-6 px-3 py-2 rounded-pill shadow-sm">
+                                        <i class="bi bi-check-circle-fill me-1"></i> Available
+                                    </span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-secondary fs-6 px-3 py-2 rounded-pill shadow-sm">
+                                        <i class="bi bi-x-circle-fill me-1"></i> Unavailable
+                                    </span>
+                                }
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Product Info & Order Action -->
+                    <div class="col-12 col-lg-6">
+                        <div class="ps-lg-3">
+                            <h1 class="display-6 fw-bold text-dark mb-2">
+                                @Html.DisplayFor(model => model.Name)
+                            </h1>
+
+                            <!-- Price Display -->
+                            <div class="d-flex align-items-baseline gap-2 mb-3">
+                                <span class="fs-2 fw-bold text-danger">
+                                    $@Html.DisplayFor(model => model.Price)
+                                </span>
+                            </div>
+
+                            <!-- Description -->
+                            <div class="mb-4">
+                                <h6 class="fw-bold text-muted text-uppercase small mb-2">Description</h6>
+                                <p class="text-secondary leading-relaxed bg-light p-3 rounded-3 border mb-0">
+                                    @Html.DisplayFor(model => model.Description)
+                                </p>
+                            </div>
+
+                            <!-- Cart Form -->
+                            <form asp-controller="Cart" asp-action="AddToCart" method="post">
+                                <input type="hidden" name="PizzaId" value="@Model?.PizzaID" />
+
+                                <!-- Quantity Input -->
+                                <div class="mb-4">
+                                    <label class="fw-bold text-dark mb-2 d-block">Quantity</label>
+                                    <input type="number" name="quantity" value="1" class="form-control form-control-lg bg-light border text-center fw-bold" style="max-width: 120px;" />
+                                </div>
+
+                                <!-- Add to Cart Button -->
+                                <div class="d-grid gap-2">
+                                    <button type="submit" class="btn btn-danger btn-lg py-3 rounded-3 fw-bold shadow-sm d-flex align-items-center justify-content-center gap-2">
+                                        <i class="bi bi-cart-plus-fill fs-5"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div> *@

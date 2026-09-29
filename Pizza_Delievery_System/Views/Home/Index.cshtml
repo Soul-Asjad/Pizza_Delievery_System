@@ -1,0 +1,569 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<!-- =====================================================
+     DELIVERY LOCATION BAR
+====================================================== -->
+<section class="delivery-bar py-2 sticky-top shadow-sm">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+            <div class="d-flex align-items-center gap-3">
+                <div class="location-pulse-ring">
+                    <i class="bi bi-geo-alt-fill location-icon"></i>
+                </div>
+                <div>
+                    <span class="text-white-50 d-block fs-7 text-uppercase tracking-wider">Delivering to</span>
+                    <strong class="text-white location-address-text">Select your location</strong>
+                </div>
+            </div>
+
+            <button type="button"
+                    class="btn change-location-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#locationModal">
+                <i class="bi bi-pin-map-fill me-1"></i> Change Location
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- =====================================================
+     HERO SECTION
+====================================================== -->
+<section class="container my-4 my-lg-5" id="hero">
+    <div class="pizza-hero overflow-hidden position-relative">
+        <div class="row align-items-center g-4 p-4 p-md-5">
+            <!-- Hero Content -->
+            <div class="col-lg-6 z-2">
+                <span class="badge hero-badge mb-3">
+                    <i class="bi bi-fire me-1"></i> Fresh • Hot • Delivered
+                </span>
+
+                <h1 class="hero-title mb-3 fw-black">
+                    Your Favorite <br />
+                    <span class="highlight-text">Pizza</span> At Your Door.
+                </h1>
+
+                <p class="hero-description mb-4">
+                    Handcrafted oven-baked perfection made with premium ingredients. Experience the ultimate slice of happiness, delivered piping hot!
+                </p>
+
+                <div class="d-flex flex-wrap gap-3">
+                    <a asp-controller="Pizza"
+                       asp-action="Index"
+                       class="btn primary-pizza-btn">
+                        Order Now <i class="bi bi-arrow-right ms-2"></i>
+                    </a>
+
+                    <a asp-controller="Pizza"
+                       asp-action="Customize"
+                       class="btn secondary-pizza-btn">
+                        <i class="bi bi-sliders me-2"></i> Build Your Pizza
+                    </a>
+                </div>
+
+                <!-- Fast Features Row -->
+                <div class="d-flex gap-4 mt-4 pt-3 border-top border-light-subtle hero-stats">
+                    <div class="d-flex align-items-center gap-2">
+                        <i class="bi bi-lightning-charge-fill text-warning fs-5"></i>
+                        <span class="small fw-semibold">30 Min Express</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                        <i class="bi bi-shield-check text-danger fs-5"></i>
+                        <span class="small fw-semibold">100% Fresh Dough</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Image -->
+            <div class="col-lg-6 text-center z-1">
+                <div class="hero-image-wrap">
+                    <img src="~/Images/1.jpg" alt="Fresh Pizza" class="hero-image img-fluid" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =====================================================
+     CATEGORY NAVIGATION (STICKY)
+====================================================== -->
+<section class="category-nav-sticky shadow-sm">
+    <div class="container py-2">
+        <div class="category-scroll d-flex gap-2 align-items-center">
+            <button class="category-btn active" data-target="hero">
+                <i class="bi bi-grid-fill me-1"></i> All
+            </button>
+            <button class="category-btn" data-target="deals-section">
+                <i class="bi bi-percent me-1"></i> Deals
+            </button>
+            <button class="category-btn" data-target="popular-section">
+                <i class="bi bi-star-fill me-1"></i> Popular
+            </button>
+            <button class="category-btn" data-target="popular-section">
+                <i class="bi bi-pie-chart-fill me-1"></i> Pizzas
+            </button>
+            <button class="category-btn" data-target="appetizers-section">
+                <i class="bi bi-egg-fried me-1"></i> Appetizers
+            </button>
+            <button class="category-btn" data-target="beverages-section">
+                <i class="bi bi-cup-straw me-1"></i> Beverages
+            </button>
+            <button class="category-btn" data-target="build-section">
+                <i class="bi bi-tools me-1"></i> Customizer
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- =====================================================
+     BEST DEALS
+====================================================== -->
+<section class="container my-5 pt-3" id="deals-section">
+    <div class="d-flex justify-content-between align-items-end mb-4">
+        <div>
+            <div class="section-tag mb-1">Unbeatable Value</div>
+            <h2 class="pizza-section-title mb-0">Today's Best Deals</h2>
+        </div>
+
+        <a asp-controller="Home" asp-action="Deals" class="pizza-view-all">
+            View All Deals <i class="bi bi-arrow-right ms-1"></i>
+        </a>
+    </div>
+
+    <div class="row g-4">
+        <!-- Deal 1 -->
+        
+        @foreach (var item in Model)
+        {
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="pizza-card h-100 d-flex flex-column">
+                    <div class="pizza-card-image">
+                        <span class="pizza-discount">HOT</span>
+                        <img src="~/All_Images/Pizza/@item.Image" alt="@item.Name" />
+                    </div>
+                    <div class="pizza-card-body d-flex flex-column justify-content-between flex-grow-1">
+                        <div>
+                            <h5 class="pizza-card-title">@item.Name</h5>
+                            <p class="pizza-card-description">@item.Description</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-3 pt-3 border-top">
+                            <div>
+                                <span class="pizza-price">Rs. @item.Price</span>
+                            </div>
+                            <form asp-controller="Cart" asp-action="AddToCart" method="post">
+                                <input type="hidden" name="PizzaId" value="@item.PizzaID" />
+                                <input type="hidden" name="quantity" value="1" />
+                                <button class="btn pizza-add-btn">
+                                    <i class="bi bi-cart-plus me-1"></i> Add
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+
+    </div>
+</section>
+
+<!-- =====================================================
+     POPULAR PIZZAS
+====================================================== -->
+<section class="container my-5" id="popular-section">
+    <div class="d-flex justify-content-between align-items-end mb-4">
+        <div>
+            <div class="section-tag mb-1">Customer Favorites</div>
+            <h2 class="pizza-section-title mb-0">Popular Pizzas</h2>
+        </div>
+
+        <a asp-controller="Pizza" asp-action="Index" class="pizza-view-all">
+            See Full Menu <i class="bi bi-arrow-right ms-1"></i>
+        </a>
+    </div>
+
+    <div class="row g-4">
+        <!-- Pizza 1 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+            <div class="pizza-card h-100 d-flex flex-column">
+                <div class="pizza-card-image">
+                    <img src="#" alt="#" />
+                </div>
+                <div class="pizza-card-body d-flex flex-column justify-content-between flex-grow-1">
+                    <div>
+                        <h5 class="pizza-card-title">Pepperoni Feast</h5>
+                        <div class="d-flex align-items-center gap-1 mb-2">
+                            <span class="pizza-rating"><i class="bi bi-star-fill"></i> 4.9</span>
+                            <span class="pizza-rating-count">(124)</span>
+                        </div>
+                        <p class="pizza-card-description">Premium pepperoni layered over double mozzarella cheese.</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3 pt-3 border-top">
+                        <span class="pizza-price">Rs. 1,199</span>
+                        <button class="btn pizza-add-btn">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pizza 2 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+            <div class="pizza-card h-100 d-flex flex-column">
+                <div class="pizza-card-image">
+                    <img src="#" alt="#" />
+                </div>
+                <div class="pizza-card-body d-flex flex-column justify-content-between flex-grow-1">
+                    <div>
+                        <h5 class="pizza-card-title">Chicken Supreme</h5>
+                        <div class="d-flex align-items-center gap-1 mb-2">
+                            <span class="pizza-rating"><i class="bi bi-star-fill"></i> 4.8</span>
+                            <span class="pizza-rating-count">(98)</span>
+                        </div>
+                        <p class="pizza-card-description">Chicken, fresh mushrooms, onions and roasted bell peppers.</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3 pt-3 border-top">
+                        <span class="pizza-price">Rs. 1,299</span>
+                        <button class="btn pizza-add-btn">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pizza 3 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+            <div class="pizza-card h-100 d-flex flex-column">
+                <div class="pizza-card-image">
+                    <img src="#" alt="#" />
+                </div>
+                <div class="pizza-card-body d-flex flex-column justify-content-between flex-grow-1">
+                    <div>
+                        <h5 class="pizza-card-title">Four Cheese</h5>
+                        <div class="d-flex align-items-center gap-1 mb-2">
+                            <span class="pizza-rating"><i class="bi bi-star-fill"></i> 4.7</span>
+                            <span class="pizza-rating-count">(87)</span>
+                        </div>
+                        <p class="pizza-card-description">A rich, melty blend of mozzarella, cheddar, gouda, & parmesan.</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3 pt-3 border-top">
+                        <span class="pizza-price">Rs. 1,099</span>
+                        <button class="btn pizza-add-btn">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pizza 4 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+            <div class="pizza-card h-100 d-flex flex-column">
+                <div class="pizza-card-image">
+                    <img src="#" alt="#" />
+                </div>
+                <div class="pizza-card-body d-flex flex-column justify-content-between flex-grow-1">
+                    <div>
+                        <h5 class="pizza-card-title">BBQ Chicken</h5>
+                        <div class="d-flex align-items-center gap-1 mb-2">
+                            <span class="pizza-rating"><i class="bi bi-star-fill"></i> 4.9</span>
+                            <span class="pizza-rating-count">(112)</span>
+                        </div>
+                        <p class="pizza-card-description">Smoky BBQ grilled chicken with red onions and sweet corn.</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3 pt-3 border-top">
+                        <span class="pizza-price">Rs. 1,249</span>
+                        <button class="btn pizza-add-btn">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =====================================================
+     BUILD YOUR OWN PIZZA
+====================================================== -->
+<section class="container my-5" id="build-section">
+    <div class="build-pizza-section p-4 p-md-5">
+        <div class="row align-items-center mb-4">
+            <div class="col-lg-8">
+                <span class="badge bg-warning text-dark mb-2 px-3 py-2 fw-bold">Custom Creator</span>
+                <h2 class="pizza-section-title text-white mt-1 mb-2">
+                    Build Your Own Masterpiece
+                </h2>
+                <p class="text-white-50 mb-0">
+                    Handpick your dough, artisanal sauces, rich cheeses, and fresh toppings.
+                </p>
+            </div>
+
+            <div class="col-lg-4 text-lg-end">
+                <a asp-controller="Pizza"
+                   asp-action="Customize"
+                   class="btn primary-pizza-btn shadow-lg mt-3 mt-lg-0">
+                    Start Building <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="row g-3 mt-2">
+            <div class="col-6 col-lg-3">
+                <div class="build-step">
+                    <div class="build-step-number">01</div>
+                    <div class="build-step-icon">
+                        <i class="bi bi-disc-fill"></i>
+                    </div>
+                    <h6 class="build-step-title">Choose Base</h6>
+                    <p class="build-step-text">Hand-tossed, Thin Crust, or Stuffed.</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <div class="build-step">
+                    <div class="build-step-number">02</div>
+                    <div class="build-step-icon">
+                        <i class="bi bi-droplet-fill"></i>
+                    </div>
+                    <h6 class="build-step-title">Pick Sauce</h6>
+                    <p class="build-step-text">Classic Tomato, BBQ, or Garlic Cream.</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <div class="build-step">
+                    <div class="build-step-number">03</div>
+                    <div class="build-step-icon">
+                        <i class="bi bi-square-fill"></i>
+                    </div>
+                    <h6 class="build-step-title">Add Cheese</h6>
+                    <p class="build-step-text">Mozzarella, Cheddar, or Extra Cheese.</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <div class="build-step">
+                    <div class="build-step-number">04</div>
+                    <div class="build-step-icon">
+                        <i class="bi bi-plus-circle-fill"></i>
+                    </div>
+                    <h6 class="build-step-title">Add Toppings</h6>
+                    <p class="build-step-text">Load up with fresh meats & veggies.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =====================================================
+     APPETIZERS
+====================================================== -->
+<section class="container my-5" id="appetizers-section">
+    <div class="d-flex justify-content-between align-items-end mb-4">
+        <div>
+            <div class="section-tag mb-1">Perfect Sides</div>
+            <h2 class="pizza-section-title mb-0">Appetizers & Sides</h2>
+        </div>
+
+        <a href="#" class="pizza-view-all">
+            View All Sides <i class="bi bi-arrow-right ms-1"></i>
+        </a>
+    </div>
+
+    <div class="row g-4">
+        <!-- Garlic Bread -->
+        <div class="col-6 col-lg-3">
+            <div class="pizza-card h-100 d-flex flex-column">
+                <div class="pizza-card-image">
+                    <img src="#" alt="#" />
+                </div>
+                <div class="pizza-card-body d-flex flex-column justify-content-between flex-grow-1">
+                    <div>
+                        <h5 class="pizza-card-title">Garlic Bread</h5>
+                        <p class="pizza-card-description">Crispy garlic bread toasted with aromatic herbs.</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3 pt-2 border-top">
+                        <span class="pizza-price">Rs. 399</span>
+                        <button class="btn pizza-add-btn">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nuggets -->
+        <div class="col-6 col-lg-3">
+            <div class="pizza-card h-100 d-flex flex-column">
+                <div class="pizza-card-image">
+                    <img src="#" alt="#" />
+                </div>
+                <div class="pizza-card-body d-flex flex-column justify-content-between flex-grow-1">
+                    <div>
+                        <h5 class="pizza-card-title">Chicken Nuggets</h5>
+                        <p class="pizza-card-description">Crispy golden bites served with dip.</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3 pt-2 border-top">
+                        <span class="pizza-price">Rs. 449</span>
+                        <button class="btn pizza-add-btn">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wings -->
+        <div class="col-6 col-lg-3">
+            <div class="pizza-card h-100 d-flex flex-column">
+                <div class="pizza-card-image">
+                    <img src="#" alt="#" />
+                </div>
+                <div class="pizza-card-body d-flex flex-column justify-content-between flex-grow-1">
+                    <div>
+                        <h5 class="pizza-card-title">BBQ Wings</h5>
+                        <p class="pizza-card-description">Juicy baked wings coated in signature BBQ sauce.</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3 pt-2 border-top">
+                        <span class="pizza-price">Rs. 599</span>
+                        <button class="btn pizza-add-btn">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fries -->
+        <div class="col-6 col-lg-3">
+            <div class="pizza-card h-100 d-flex flex-column">
+                <div class="pizza-card-image">
+                    <img src="#" alt="#" />
+                </div>
+                <div class="pizza-card-body d-flex flex-column justify-content-between flex-grow-1">
+                    <div>
+                        <h5 class="pizza-card-title">Loaded Fries</h5>
+                        <p class="pizza-card-description">Golden fries with melted cheese & Jalapeños.</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3 pt-2 border-top">
+                        <span class="pizza-price">Rs. 349</span>
+                        <button class="btn pizza-add-btn">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =====================================================
+     WHY CHOOSE US
+====================================================== -->
+<section class="container my-5 py-3">
+    <div class="text-center mb-5">
+        <span class="section-tag">Our Quality Promise</span>
+        <h2 class="pizza-section-title mt-1">Why Choose PizzaHouse?</h2>
+    </div>
+
+    <div class="row g-4">
+        <div class="col-12 col-md-4">
+            <div class="why-card text-center h-100">
+                <div class="why-icon">
+                    <i class="bi bi-fire"></i>
+                </div>
+                <h5 class="fw-bold mt-2">Fresh & Hot</h5>
+                <p class="text-muted mb-0">Baked to order and delivered in insulated thermal bags so it arrives sizzling hot.</p>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <div class="why-card text-center h-100">
+                <div class="why-icon">
+                    <i class="bi bi-clock-history"></i>
+                </div>
+                <h5 class="fw-bold mt-2">Fast Delivery</h5>
+                <p class="text-muted mb-0">Streamlined kitchen operations guarantee fast dispatch straight to your door.</p>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <div class="why-card text-center h-100">
+                <div class="why-icon">
+                    <i class="bi bi-heart-fill"></i>
+                </div>
+                <h5 class="fw-bold mt-2">Made With Care</h5>
+                <p class="text-muted mb-0">Handcrafted dough, 100% real dairy cheese, and local fresh vegetables.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =====================================================
+     TRACK ORDER
+====================================================== -->
+<section class="container my-5">
+    <div class="order-tracking p-4 p-md-5">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <span class="badge bg-danger mb-2">Live Status</span>
+                <h2 class="fw-bold text-white mb-2">Already placed an order?</h2>
+                <p class="text-white-50 mb-0">Track your pizza in real time from our oven to your door.</p>
+            </div>
+
+            <div class="col-lg-4 text-lg-end">
+                <a asp-controller="Order"
+                   asp-action="Track"
+                   class="btn track-order-btn mt-3 mt-lg-0">
+                    <i class="bi bi-geo-alt me-2"></i> Track Order
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =====================================================
+     LOCATION MODAL
+====================================================== -->
+<div class="modal fade"
+     id="locationModal"
+     tabindex="-1"
+     aria-labelledby="locationModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+            <div class="modal-header bg-light">
+                <div>
+                    <h5 class="modal-title fw-bold" id="locationModalLabel">Choose Your Location</h5>
+                    <small class="text-muted">Select where you want your order delivered.</small>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body p-4">
+                <!-- Home -->
+                <div class="location-option mb-3">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="location-option-icon">
+                            <i class="bi bi-house-door-fill"></i>
+                        </div>
+                        <div>
+                            <strong class="d-block mb-1">Home</strong>
+                            <div class="small text-muted">Add your primary home address</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Work -->
+                <div class="location-option mb-3">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="location-option-icon">
+                            <i class="bi bi-building-fill"></i>
+                        </div>
+                        <div>
+                            <strong class="d-block mb-1">Work</strong>
+                            <div class="small text-muted">Add your office address</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add Address -->
+                <button type="button" class="btn btn-outline-danger w-100 py-2 mt-2 rounded-3 fw-bold">
+                    <i class="bi bi-plus-lg me-2"></i> Add New Address
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/category-scroll.js" asp-append-version="true"></script>
+}

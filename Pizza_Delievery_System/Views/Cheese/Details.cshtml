@@ -1,0 +1,126 @@
+@model Pizza_Delievery_System.Models.Cheese
+
+@{
+    Layout = "_AdminLayout";
+    ViewData["Title"] = "Cheese Details";
+}
+
+<div class="bg-light min-vh-100 py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+
+                <!-- Header & Navigation -->
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                    <div>
+                        <a asp-action="CheeseList" asp-controller="Cheese" class="text-danger text-decoration-none fw-semibold small">
+                            <i class="bi bi-arrow-left me-1"></i> Back to List
+                        </a>
+                        <h2 class="fw-bold mb-0 mt-1">Cheese Details</h2>
+                    </div>
+                    <span class="badge bg-danger fs-6 px-3 py-2 rounded-pill">
+                        <i class="bi bi-box-seam-fill me-1"></i> Cheese Item
+                    </span>
+                </div>
+
+                <!-- Main Details Card -->
+                <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+                    <div class="card-header bg-danger text-white p-4 border-0">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="rounded-circle bg-white text-danger d-flex align-items-center justify-content-center fs-3" style="width: 50px; height: 50px;">
+                                <i class="bi bi-info-circle-fill"></i>
+                            </div>
+                            <div>
+                                <h4 class="mb-0 fw-bold">@Html.DisplayFor(model => model.Name)</h4>
+                                <p class="text-white-50 small mb-0">View cheese product specifications</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-body p-4 p-md-5 bg-white">
+                        <div class="row g-4 align-items-center">
+
+                            <!-- Icon Preview Section -->
+                            <div class="col-12 col-md-5 text-center">
+                                <div class="p-4 bg-light rounded-4 border d-flex flex-column align-items-center justify-content-center">
+                                    <div class="bg-danger bg-opacity-10 text-danger rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 100px; height: 100px;">
+                                        <i class="bi bi-box-seam display-4"></i>
+                                    </div>
+                                    <span class="fw-bold text-dark">@Html.DisplayFor(model => model.Name)</span>
+                                </div>
+                            </div>
+
+                            <!-- Details Content -->
+                            <div class="col-12 col-md-7">
+                                <dl class="row mb-0 g-3">
+                                    <dt class="col-sm-4 text-muted small text-uppercase">
+                                        @Html.DisplayNameFor(model => model.Name)
+                                    </dt>
+                                    <dd class="col-sm-8 fw-bold text-dark">
+                                        @Html.DisplayFor(model => model.Name)
+                                    </dd>
+
+                                    <dt class="col-sm-4 text-muted small text-uppercase">
+                                        @Html.DisplayNameFor(model => model.Description)
+                                    </dt>
+                                    <dd class="col-sm-8 text-dark bg-light p-2 rounded-2 border">
+                                        @Html.DisplayFor(model => model.Description)
+                                    </dd>
+
+                                    <dt class="col-sm-4 text-muted small text-uppercase">
+                                        @Html.DisplayNameFor(model => model.Price)
+                                    </dt>
+                                    <dd class="col-sm-8 fw-bold text-danger fs-5">
+                                        @Html.DisplayFor(model => model.Price)
+                                    </dd>
+
+                                    <dt class="col-sm-4 text-muted small text-uppercase">
+                                        @Html.DisplayNameFor(model => model.StockQuantity)
+                                    </dt>
+                                    <dd class="col-sm-8 text-dark">
+                                        @Html.DisplayFor(model => model.StockQuantity)
+                                    </dd>
+
+                                    <dt class="col-sm-4 text-muted small text-uppercase">
+                                        @Html.DisplayNameFor(model => model.LowStockThreshold)
+                                    </dt>
+                                    <dd class="col-sm-8 text-dark">
+                                        @Html.DisplayFor(model => model.LowStockThreshold)
+                                    </dd>
+
+                                    <dt class="col-sm-4 text-muted small text-uppercase">
+                                        @Html.DisplayNameFor(model => model.IsAvailable)
+                                    </dt>
+                                    <dd class="col-sm-8 text-dark">
+                                        @Html.DisplayFor(model => model.IsAvailable)
+                                    </dd>
+
+                                    <dt class="col-sm-4 text-muted small text-uppercase">
+                                        @Html.DisplayNameFor(model => model.CreatedDate)
+                                    </dt>
+                                    <dd class="col-sm-8 text-dark">
+                                        <i class="bi bi-calendar-event text-danger me-1"></i>
+                                        @Html.DisplayFor(model => model.CreatedDate)
+                                    </dd>
+                                </dl>
+                            </div>
+
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="d-flex align-items-center justify-content-end gap-2 mt-5 pt-3 border-top">
+                            <a asp-action="CheeseList" asp-controller="Cheese" class="btn btn-outline-secondary px-4 py-2 rounded-3 fw-semibold">
+                                <i class="bi bi-arrow-left me-1"></i> Back to List
+                            </a>
+                            <a asp-action="Edit" asp-route-id="@Model?.CheeseID" class="btn btn-danger px-4 py-2 rounded-3 fw-bold shadow-sm">
+                                <i class="bi bi-pencil-square me-1"></i> Edit
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,626 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+    color: var(--bs-secondary-color);
+    text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+    text-align: start;
+}
+
+/* =========================================================
+   PIZZAHOUSE - GLOBAL STYLES
+========================================================= */
+
+:root {
+    --pizza-red: #d62828;
+    --pizza-red-dark: #b71c1c;
+    --pizza-red-light: #fff3f3;
+    --pizza-black: #171717;
+    --pizza-text: #252525;
+    --pizza-muted: #707070;
+    --pizza-border: #e9e9e9;
+    --pizza-background: #ffffff;
+}
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+body {
+    margin: 0;
+    background: var(--pizza-background);
+    color: var(--pizza-text);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    font-family: inherit;
+}
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.pizza-navbar {
+    background: #ffffff;
+    border-bottom: 1px solid var(--pizza-border);
+}
+
+.pizza-brand {
+    font-size: 1.65rem;
+    font-weight: 800;
+    letter-spacing: -0.8px;
+}
+
+.brand-pizza {
+    color: var(--pizza-red);
+}
+
+.brand-house {
+    color: var(--pizza-black);
+}
+
+.pizza-nav-link {
+    color: #333333 !important;
+    font-weight: 500;
+    padding: 1rem 1rem !important;
+    position: relative;
+}
+
+    .pizza-nav-link:hover {
+        color: var(--pizza-red) !important;
+    }
+
+    .pizza-nav-link::after {
+        content: "";
+        position: absolute;
+        left: 1rem;
+        right: 1rem;
+        bottom: 5px;
+        height: 2px;
+        background: var(--pizza-red);
+        transform: scaleX(0);
+        transition: transform .2s ease;
+    }
+
+    .pizza-nav-link:hover::after {
+        transform: scaleX(1);
+    }
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+.pizza-search {
+    width: 205px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    background: #f7f7f7;
+    border: 1px solid var(--pizza-border);
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+    .pizza-search input {
+        border: none;
+        background: transparent;
+        box-shadow: none !important;
+        padding-left: 16px;
+        font-size: 14px;
+    }
+
+    .pizza-search button {
+        width: 45px;
+        height: 100%;
+        border: none;
+        background: transparent;
+        color: var(--pizza-red);
+    }
+
+/* =========================================================
+   CART
+========================================================= */
+
+.pizza-cart {
+    width: 43px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: var(--pizza-black);
+    background: #ffffff;
+}
+
+/* =========================================================
+   DELIVERY BAR
+========================================================= */
+
+.delivery-bar {
+    background: var(--pizza-black);
+    color: #ffffff;
+    border-bottom: 2px solid var(--pizza-red);
+    z-index: 1020;
+}
+
+.location-pulse-ring {
+    width: 36px;
+    height: 36px;
+    background: rgba(214, 40, 40, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.location-icon {
+    color: var(--pizza-red);
+}
+
+.location-address-text {
+    font-size: 0.95rem;
+}
+
+.change-location-btn {
+    background: var(--pizza-red);
+    color: #ffffff;
+    border-radius: 50px;
+    font-size: 0.825rem;
+    font-weight: 600;
+    padding: 0.4rem 1.2rem;
+    transition: all 0.2s ease;
+}
+
+    .change-location-btn:hover {
+        background: var(--pizza-red-dark);
+        color: #ffffff;
+    }
+
+/* =========================================================
+   HERO SECTION
+========================================================= */
+
+.pizza-hero {
+    background: linear-gradient(135deg, #1d1d1d 0%, #111111 100%);
+    border-radius: 24px;
+    color: #ffffff;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.hero-badge {
+    background: rgba(214, 40, 40, 0.2);
+    color: #ff6b6b;
+    border: 1px solid rgba(214, 40, 40, 0.4);
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.hero-title {
+    font-size: 2.75rem;
+    line-height: 1.15;
+}
+
+@media (min-width: 992px) {
+    .hero-title {
+        font-size: 3.5rem;
+    }
+}
+
+.fw-black {
+    font-weight: 900;
+}
+
+.highlight-text {
+    color: var(--pizza-red);
+    position: relative;
+    display: inline-block;
+}
+
+.hero-description {
+    color: #cccccc;
+    font-size: 1.05rem;
+    max-width: 500px;
+}
+
+.primary-pizza-btn {
+    background: var(--pizza-red);
+    color: #ffffff;
+    border-radius: 50px;
+    padding: 0.75rem 1.75rem;
+    font-weight: 700;
+    border: 2px solid var(--pizza-red);
+    transition: all 0.25s ease;
+}
+
+    .primary-pizza-btn:hover {
+        background: var(--pizza-red-dark);
+        border-color: var(--pizza-red-dark);
+        color: #ffffff;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 18px rgba(214, 40, 40, 0.35);
+    }
+
+.secondary-pizza-btn {
+    background: transparent;
+    color: #ffffff;
+    border-radius: 50px;
+    padding: 0.75rem 1.75rem;
+    font-weight: 700;
+    border: 2px solid rgba(255,255,255,0.25);
+    transition: all 0.25s ease;
+}
+
+    .secondary-pizza-btn:hover {
+        background: rgba(255,255,255,0.1);
+        color: #ffffff;
+        border-color: #ffffff;
+    }
+
+.hero-image-wrap {
+    position: relative;
+}
+
+.hero-image {
+    max-height: 380px;
+    object-fit: contain;
+    filter: drop-shadow(0 15px 25px rgba(0,0,0,0.5));
+    transition: transform 0.4s ease;
+}
+
+.pizza-hero:hover .hero-image {
+    transform: scale(1.03) rotate(1deg);
+}
+
+/* =========================================================
+   STICKY CATEGORY NAV
+========================================================= */
+
+.category-nav-sticky {
+    position: sticky;
+    top: 50px;
+    background: #ffffff;
+    z-index: 1010;
+    border-bottom: 1px solid var(--pizza-border);
+}
+
+.category-scroll {
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+    .category-scroll::-webkit-scrollbar {
+        display: none;
+    }
+
+.category-btn {
+    border: 1px solid var(--pizza-border);
+    background: #f8f9fa;
+    color: var(--pizza-text);
+    padding: 0.5rem 1.25rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.875rem;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+}
+
+    .category-btn:hover,
+    .category-btn.active {
+        background: var(--pizza-red);
+        color: #ffffff;
+        border-color: var(--pizza-red);
+        box-shadow: 0 4px 10px rgba(214, 40, 40, 0.25);
+    }
+
+/* =========================================================
+   SECTION HEADERS
+========================================================= */
+
+.section-tag {
+    color: var(--pizza-red);
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.pizza-section-title {
+    font-weight: 800;
+    color: var(--pizza-black);
+    font-size: 1.85rem;
+}
+
+.pizza-view-all {
+    color: var(--pizza-red);
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+    .pizza-view-all:hover {
+        color: var(--pizza-red-dark);
+    }
+
+/* =========================================================
+   CARDS (PIZZA & DEALS)
+========================================================= */
+
+.pizza-card {
+    background: #ffffff;
+    border: 1px solid var(--pizza-border);
+    border-radius: 18px;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+    .pizza-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+        border-color: rgba(214, 40, 40, 0.3);
+    }
+
+.pizza-card-image {
+    position: relative;
+    height: 190px;
+    overflow: hidden;
+    background: #fdfaf7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .pizza-card-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.4s ease;
+    }
+
+.pizza-card:hover .pizza-card-image img {
+    transform: scale(1.06);
+}
+
+.pizza-discount {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: var(--pizza-red);
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 0.75rem;
+    padding: 0.3rem 0.75rem;
+    border-radius: 50px;
+    z-index: 2;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.pizza-card-body {
+    padding: 1.25rem;
+}
+
+.pizza-card-title {
+    font-weight: 700;
+    color: var(--pizza-black);
+    font-size: 1.15rem;
+    margin-bottom: 0.4rem;
+}
+
+.pizza-card-description {
+    color: var(--pizza-muted);
+    font-size: 0.875rem;
+    line-height: 1.4;
+    margin-bottom: 0;
+}
+
+.pizza-rating {
+    color: #ffb703;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.pizza-rating-count {
+    color: var(--pizza-muted);
+    font-size: 0.8rem;
+}
+
+.pizza-price {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--pizza-black);
+}
+
+.pizza-old-price {
+    font-size: 0.875rem;
+    color: var(--pizza-muted);
+    text-decoration: line-through;
+}
+
+.pizza-add-btn {
+    background: var(--pizza-red-light);
+    color: var(--pizza-red);
+    font-weight: 700;
+    border-radius: 50px;
+    padding: 0.4rem 1.1rem;
+    border: none;
+    font-size: 0.875rem;
+    transition: all 0.2s ease;
+}
+
+    .pizza-add-btn:hover {
+        background: var(--pizza-red);
+        color: #ffffff;
+    }
+
+/* =========================================================
+   BUILD YOUR OWN PIZZA SECTION
+========================================================= */
+
+.build-pizza-section {
+    background: linear-gradient(135deg, #111111 0%, #222222 100%);
+    border-radius: 24px;
+    position: relative;
+    border: 1px solid #333333;
+}
+
+.build-step {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 1.25rem;
+    position: relative;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+    .build-step:hover {
+        background: rgba(255, 255, 255, 0.09);
+        transform: translateY(-3px);
+        border-color: rgba(214, 40, 40, 0.5);
+    }
+
+.build-step-number {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    font-weight: 900;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.build-step-icon {
+    width: 42px;
+    height: 42px;
+    background: rgba(214, 40, 40, 0.2);
+    color: var(--pizza-red);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.build-step-title {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.build-step-text {
+    color: #aaaaaa;
+    font-size: 0.8rem;
+    margin-bottom: 0;
+}
+
+/* =========================================================
+   WHY CHOOSE US & TRACK ORDER
+========================================================= */
+
+.why-card {
+    background: #ffffff;
+    border: 1px solid var(--pizza-border);
+    padding: 2rem 1.5rem;
+    border-radius: 18px;
+    transition: all 0.3s ease;
+}
+
+    .why-card:hover {
+        box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        border-color: var(--pizza-red);
+    }
+
+.why-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--pizza-red-light);
+    color: var(--pizza-red);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.order-tracking {
+    background: linear-gradient(135deg, var(--pizza-red) 0%, var(--pizza-red-dark) 100%);
+    border-radius: 24px;
+    box-shadow: 0 10px 25px rgba(214, 40, 40, 0.3);
+}
+
+.track-order-btn {
+    background: #ffffff;
+    color: var(--pizza-red);
+    font-weight: 800;
+    border-radius: 50px;
+    padding: 0.75rem 1.75rem;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+    .track-order-btn:hover {
+        background: var(--pizza-black);
+        color: #ffffff;
+    }
+
+/* =========================================================
+   LOCATION MODAL
+========================================================= */
+
+.location-option {
+    padding: 0.85rem 1rem;
+    border-radius: 12px;
+    border: 1px solid var(--pizza-border);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+    .location-option:hover {
+        border-color: var(--pizza-red);
+        background: var(--pizza-red-light);
+    }
+
+.location-option-icon {
+    width: 40px;
+    height: 40px;
+    background: #f1f1f1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: var(--pizza-black);
+}
+
+.location-option:hover .location-option-icon {
+    background: var(--pizza-red);
+    color: #ffffff;
+}

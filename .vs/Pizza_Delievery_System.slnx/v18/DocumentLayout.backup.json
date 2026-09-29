@@ -1,0 +1,513 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|c:\\users\\alian\\onedrive\\desktop\\pizza delievery system\\pizza_delievery_system\\pizza_delievery_system\\views\\home\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|solutionrelative:pizza_delievery_system\\views\\home\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|c:\\users\\alian\\onedrive\\desktop\\pizza delievery system\\pizza_delievery_system\\pizza_delievery_system\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|solutionrelative:pizza_delievery_system\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|c:\\users\\alian\\onedrive\\desktop\\pizza delievery system\\pizza_delievery_system\\pizza_delievery_system\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|solutionrelative:pizza_delievery_system\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|c:\\users\\alian\\onedrive\\desktop\\pizza delievery system\\pizza_delievery_system\\pizza_delievery_system\\controllers\\vegetablecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|solutionrelative:pizza_delievery_system\\controllers\\vegetablecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|c:\\users\\alian\\onedrive\\desktop\\pizza delievery system\\pizza_delievery_system\\pizza_delievery_system\\controllers\\saucecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|solutionrelative:pizza_delievery_system\\controllers\\saucecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|c:\\users\\alian\\onedrive\\desktop\\pizza delievery system\\pizza_delievery_system\\pizza_delievery_system\\controllers\\pizzacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|solutionrelative:pizza_delievery_system\\controllers\\pizzacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|c:\\users\\alian\\onedrive\\desktop\\pizza delievery system\\pizza_delievery_system\\pizza_delievery_system\\controllers\\pizzabasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|solutionrelative:pizza_delievery_system\\controllers\\pizzabasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|c:\\users\\alian\\onedrive\\desktop\\pizza delievery system\\pizza_delievery_system\\pizza_delievery_system\\controllers\\cheesecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|solutionrelative:pizza_delievery_system\\controllers\\cheesecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|c:\\users\\alian\\onedrive\\desktop\\pizza delievery system\\pizza_delievery_system\\pizza_delievery_system\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|solutionrelative:pizza_delievery_system\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|c:\\users\\alian\\onedrive\\desktop\\pizza delievery system\\pizza_delievery_system\\pizza_delievery_system\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|solutionrelative:pizza_delievery_system\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|c:\\users\\alian\\onedrive\\desktop\\pizza delievery system\\pizza_delievery_system\\pizza_delievery_system\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|solutionrelative:pizza_delievery_system\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|c:\\users\\alian\\onedrive\\desktop\\pizza delievery system\\pizza_delievery_system\\pizza_delievery_system\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|solutionrelative:pizza_delievery_system\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|c:\\users\\alian\\onedrive\\desktop\\pizza delievery system\\pizza_delievery_system\\pizza_delievery_system\\views\\cheese\\addcheese.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|solutionrelative:pizza_delievery_system\\views\\cheese\\addcheese.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|c:\\users\\alian\\onedrive\\desktop\\pizza delievery system\\pizza_delievery_system\\pizza_delievery_system\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|solutionrelative:pizza_delievery_system\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|c:\\users\\alian\\onedrive\\desktop\\pizza delievery system\\pizza_delievery_system\\pizza_delievery_system\\views\\cheese\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|solutionrelative:pizza_delievery_system\\views\\cheese\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|c:\\users\\alian\\onedrive\\desktop\\pizza delievery system\\pizza_delievery_system\\pizza_delievery_system\\views\\cheese\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|solutionrelative:pizza_delievery_system\\views\\cheese\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|c:\\users\\alian\\onedrive\\desktop\\pizza delievery system\\pizza_delievery_system\\pizza_delievery_system\\models\\custompizza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|solutionrelative:pizza_delievery_system\\models\\custompizza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|c:\\users\\alian\\onedrive\\desktop\\pizza delievery system\\pizza_delievery_system\\pizza_delievery_system\\views\\pizzabase\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|solutionrelative:pizza_delievery_system\\views\\pizzabase\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|c:\\users\\alian\\onedrive\\desktop\\pizza delievery system\\pizza_delievery_system\\pizza_delievery_system\\views\\pizzabase\\addpizzabase.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|solutionrelative:pizza_delievery_system\\views\\pizzabase\\addpizzabase.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|c:\\users\\alian\\onedrive\\desktop\\pizza delievery system\\pizza_delievery_system\\pizza_delievery_system\\views\\cheese\\cheeselist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|solutionrelative:pizza_delievery_system\\views\\cheese\\cheeselist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|c:\\users\\alian\\onedrive\\desktop\\pizza delievery system\\pizza_delievery_system\\pizza_delievery_system\\views\\pizzabase\\pizzabaselist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|solutionrelative:pizza_delievery_system\\views\\pizzabase\\pizzabaselist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|c:\\users\\alian\\onedrive\\desktop\\pizza delievery system\\pizza_delievery_system\\pizza_delievery_system\\views\\pizzabase\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|solutionrelative:pizza_delievery_system\\views\\pizzabase\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|c:\\users\\alian\\onedrive\\desktop\\pizza delievery system\\pizza_delievery_system\\pizza_delievery_system\\views\\pizza\\pizzalist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|solutionrelative:pizza_delievery_system\\views\\pizza\\pizzalist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|c:\\users\\alian\\onedrive\\desktop\\pizza delievery system\\pizza_delievery_system\\pizza_delievery_system\\views\\pizza\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|solutionrelative:pizza_delievery_system\\views\\pizza\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|c:\\users\\alian\\onedrive\\desktop\\pizza delievery system\\pizza_delievery_system\\pizza_delievery_system\\views\\pizza\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|solutionrelative:pizza_delievery_system\\views\\pizza\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|c:\\users\\alian\\onedrive\\desktop\\pizza delievery system\\pizza_delievery_system\\pizza_delievery_system\\views\\pizza\\addpizza.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|solutionrelative:pizza_delievery_system\\views\\pizza\\addpizza.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|c:\\users\\alian\\onedrive\\desktop\\pizza delievery system\\pizza_delievery_system\\pizza_delievery_system\\views\\vegetable\\addvegetable.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|solutionrelative:pizza_delievery_system\\views\\vegetable\\addvegetable.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|c:\\users\\alian\\onedrive\\desktop\\pizza delievery system\\pizza_delievery_system\\pizza_delievery_system\\models\\cheese.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|solutionrelative:pizza_delievery_system\\models\\cheese.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|c:\\users\\alian\\onedrive\\desktop\\pizza delievery system\\pizza_delievery_system\\pizza_delievery_system\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{BD354265-5B22-5404-E6F1-A6D9DF22339E}|Pizza_Delievery_System\\Pizza_Delievery_System.csproj|solutionrelative:pizza_delievery_system\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pizza_Delievery_System\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Pizza_Delievery_System\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAAAI8AAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-13T12:52:21.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Detail.cshtml",
+              "DocumentMoniker": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Views\\Home\\Detail.cshtml",
+              "RelativeDocumentMoniker": "Pizza_Delievery_System\\Views\\Home\\Detail.cshtml",
+              "ToolTip": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Views\\Home\\Detail.cshtml",
+              "RelativeToolTip": "Pizza_Delievery_System\\Views\\Home\\Detail.cshtml",
+              "ViewState": "AgIAAEAAAAAAAAAAAADwv0oAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-13T12:50:44.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Pizza_Delievery_System\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Pizza_Delievery_System\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-13T12:49:21.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SauceController.cs",
+              "DocumentMoniker": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Controllers\\SauceController.cs",
+              "RelativeDocumentMoniker": "Pizza_Delievery_System\\Controllers\\SauceController.cs",
+              "ToolTip": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Controllers\\SauceController.cs",
+              "RelativeToolTip": "Pizza_Delievery_System\\Controllers\\SauceController.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAwwGMAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-13T12:34:06.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PizzaController.cs",
+              "DocumentMoniker": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Controllers\\PizzaController.cs",
+              "RelativeDocumentMoniker": "Pizza_Delievery_System\\Controllers\\PizzaController.cs",
+              "ToolTip": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Controllers\\PizzaController.cs",
+              "RelativeToolTip": "Pizza_Delievery_System\\Controllers\\PizzaController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBcAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-13T12:33:38.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PizzaBaseController.cs",
+              "DocumentMoniker": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Controllers\\PizzaBaseController.cs",
+              "RelativeDocumentMoniker": "Pizza_Delievery_System\\Controllers\\PizzaBaseController.cs",
+              "ToolTip": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Controllers\\PizzaBaseController.cs",
+              "RelativeToolTip": "Pizza_Delievery_System\\Controllers\\PizzaBaseController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwBUAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-13T12:33:09.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Pizza_Delievery_System\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Pizza_Delievery_System\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-13T12:28:26.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CheeseController.cs",
+              "DocumentMoniker": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Controllers\\CheeseController.cs",
+              "RelativeDocumentMoniker": "Pizza_Delievery_System\\Controllers\\CheeseController.cs",
+              "ToolTip": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Controllers\\CheeseController.cs",
+              "RelativeToolTip": "Pizza_Delievery_System\\Controllers\\CheeseController.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAwwGMAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-13T11:47:05.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "VegetableController.cs",
+              "DocumentMoniker": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Controllers\\VegetableController.cs",
+              "RelativeDocumentMoniker": "Pizza_Delievery_System\\Controllers\\VegetableController.cs",
+              "ToolTip": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Controllers\\VegetableController.cs",
+              "RelativeToolTip": "Pizza_Delievery_System\\Controllers\\VegetableController.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAswG4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-13T12:34:40.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "Pizza_Delievery_System\\Views\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeToolTip": "Pizza_Delievery_System\\Views\\Shared\\_AdminLayout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAB7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-13T12:06:15.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Pizza_Delievery_System\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Pizza_Delievery_System\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAiwE8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-13T12:29:52.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pizza_Delievery_System\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "Pizza_Delievery_System\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-13T12:28:21.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CustomPizza.cs",
+              "DocumentMoniker": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Models\\CustomPizza.cs",
+              "RelativeDocumentMoniker": "Pizza_Delievery_System\\Models\\CustomPizza.cs",
+              "ToolTip": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Models\\CustomPizza.cs",
+              "RelativeToolTip": "Pizza_Delievery_System\\Models\\CustomPizza.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-13T12:05:06.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AddCheese.cshtml",
+              "DocumentMoniker": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Views\\Cheese\\AddCheese.cshtml",
+              "RelativeDocumentMoniker": "Pizza_Delievery_System\\Views\\Cheese\\AddCheese.cshtml",
+              "ToolTip": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Views\\Cheese\\AddCheese.cshtml",
+              "RelativeToolTip": "Pizza_Delievery_System\\Views\\Cheese\\AddCheese.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGUAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-13T11:55:23.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Views\\User\\Login.cshtml",
+              "RelativeDocumentMoniker": "Pizza_Delievery_System\\Views\\User\\Login.cshtml",
+              "ToolTip": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Views\\User\\Login.cshtml",
+              "RelativeToolTip": "Pizza_Delievery_System\\Views\\User\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-13T12:29:44.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CheeseList.cshtml",
+              "DocumentMoniker": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Views\\Cheese\\CheeseList.cshtml",
+              "RelativeDocumentMoniker": "Pizza_Delievery_System\\Views\\Cheese\\CheeseList.cshtml",
+              "ToolTip": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Views\\Cheese\\CheeseList.cshtml",
+              "RelativeToolTip": "Pizza_Delievery_System\\Views\\Cheese\\CheeseList.cshtml",
+              "ViewState": "AgIAAHEAAAAAAAAAAADwv5YAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-13T11:56:09.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Views\\Cheese\\Details.cshtml",
+              "RelativeDocumentMoniker": "Pizza_Delievery_System\\Views\\Cheese\\Details.cshtml",
+              "ToolTip": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Views\\Cheese\\Details.cshtml",
+              "RelativeToolTip": "Pizza_Delievery_System\\Views\\Cheese\\Details.cshtml",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAqwH0AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-13T11:56:28.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Views\\Cheese\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Pizza_Delievery_System\\Views\\Cheese\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Views\\Cheese\\Edit.cshtml",
+              "RelativeToolTip": "Pizza_Delievery_System\\Views\\Cheese\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-13T11:56:48.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AddPizzaBase.cshtml",
+              "DocumentMoniker": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Views\\PizzaBase\\AddPizzaBase.cshtml",
+              "RelativeDocumentMoniker": "Pizza_Delievery_System\\Views\\PizzaBase\\AddPizzaBase.cshtml",
+              "ToolTip": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Views\\PizzaBase\\AddPizzaBase.cshtml",
+              "RelativeToolTip": "Pizza_Delievery_System\\Views\\PizzaBase\\AddPizzaBase.cshtml",
+              "ViewState": "AgIAADoAAAAAAAAAAADwv48AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-13T11:57:46.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Views\\PizzaBase\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Pizza_Delievery_System\\Views\\PizzaBase\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Views\\PizzaBase\\Edit.cshtml",
+              "RelativeToolTip": "Pizza_Delievery_System\\Views\\PizzaBase\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-13T11:58:07.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "PizzaBaseList.cshtml",
+              "DocumentMoniker": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Views\\PizzaBase\\PizzaBaseList.cshtml",
+              "RelativeDocumentMoniker": "Pizza_Delievery_System\\Views\\PizzaBase\\PizzaBaseList.cshtml",
+              "ToolTip": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Views\\PizzaBase\\PizzaBaseList.cshtml",
+              "RelativeToolTip": "Pizza_Delievery_System\\Views\\PizzaBase\\PizzaBaseList.cshtml",
+              "ViewState": "AgIAAHEAAAAAAAAAAADwv4UAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-13T11:58:28.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Views\\PizzaBase\\Details.cshtml",
+              "RelativeDocumentMoniker": "Pizza_Delievery_System\\Views\\PizzaBase\\Details.cshtml",
+              "ToolTip": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Views\\PizzaBase\\Details.cshtml",
+              "RelativeToolTip": "Pizza_Delievery_System\\Views\\PizzaBase\\Details.cshtml",
+              "ViewState": "AgIAAFgAAAAAAAAAAADwv30AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-13T11:58:00.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "PizzaList.cshtml",
+              "DocumentMoniker": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Views\\Pizza\\PizzaList.cshtml",
+              "RelativeDocumentMoniker": "Pizza_Delievery_System\\Views\\Pizza\\PizzaList.cshtml",
+              "ToolTip": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Views\\Pizza\\PizzaList.cshtml",
+              "RelativeToolTip": "Pizza_Delievery_System\\Views\\Pizza\\PizzaList.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-13T11:59:23.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Views\\Pizza\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Pizza_Delievery_System\\Views\\Pizza\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Views\\Pizza\\Edit.cshtml",
+              "RelativeToolTip": "Pizza_Delievery_System\\Views\\Pizza\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-13T11:59:19.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Views\\Pizza\\Details.cshtml",
+              "RelativeDocumentMoniker": "Pizza_Delievery_System\\Views\\Pizza\\Details.cshtml",
+              "ToolTip": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Views\\Pizza\\Details.cshtml",
+              "RelativeToolTip": "Pizza_Delievery_System\\Views\\Pizza\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-13T11:59:15.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AddPizza.cshtml",
+              "DocumentMoniker": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Views\\Pizza\\AddPizza.cshtml",
+              "RelativeDocumentMoniker": "Pizza_Delievery_System\\Views\\Pizza\\AddPizza.cshtml",
+              "ToolTip": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Views\\Pizza\\AddPizza.cshtml",
+              "RelativeToolTip": "Pizza_Delievery_System\\Views\\Pizza\\AddPizza.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-13T11:58:56.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AddVegetable.cshtml",
+              "DocumentMoniker": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Views\\Vegetable\\AddVegetable.cshtml",
+              "RelativeDocumentMoniker": "Pizza_Delievery_System\\Views\\Vegetable\\AddVegetable.cshtml",
+              "ToolTip": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Views\\Vegetable\\AddVegetable.cshtml",
+              "RelativeToolTip": "Pizza_Delievery_System\\Views\\Vegetable\\AddVegetable.cshtml",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-13T11:57:35.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Cheese.cs",
+              "DocumentMoniker": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Models\\Cheese.cs",
+              "RelativeDocumentMoniker": "Pizza_Delievery_System\\Models\\Cheese.cs",
+              "ToolTip": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\Models\\Cheese.cs",
+              "RelativeToolTip": "Pizza_Delievery_System\\Models\\Cheese.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-13T11:46:37.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "Pizza_Delievery_System\\wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\alian\\OneDrive\\Desktop\\Pizza Delievery System\\Pizza_Delievery_System\\Pizza_Delievery_System\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "Pizza_Delievery_System\\wwwroot\\js\\site.js",
+              "ViewState": "AgIAACYAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-09-08T08:24:18.469Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
