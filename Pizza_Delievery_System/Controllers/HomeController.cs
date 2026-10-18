@@ -30,10 +30,37 @@ namespace Pizza_Delievery_System.Controllers
             return View();
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        public IActionResult Custom_pizza()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            ViewBag.PizzaBase = this.context.PizzaBase.ToList();
+            ViewBag.Sauce = this.context.Sauce.ToList();
+            ViewBag.Cheese = this.context.Cheese.ToList();
+
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Custom_Pizza(CustomPizza pizza)
+        {
+            var session = HttpContext.Session.GetInt32("User_ID");
+
+            if (session == null)
+            {
+                return RedirectToAction("Login", "User");
+            }
+
+            pizza.UserID = session.Value;
+
+            this.context.CustomPizza.Add(pizza);
+            this.context.SaveChanges();
+
+            int customid = pizza.CustomPizzaID;
+
+            return RedirectToAction("AddtoCart","Cart", new
+            {
+                id = customid,
+                quantity = 1
+            });
         }
     }
 }

@@ -17,7 +17,7 @@ namespace Pizza_Delievery_System.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "10.0.11")
+                .HasAnnotation("ProductVersion", "10.0.13")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -103,10 +103,10 @@ namespace Pizza_Delievery_System.Migrations
                     b.Property<int>("CartID")
                         .HasColumnType("int");
 
-                    b.Property<int>("CustomPizzaID")
+                    b.Property<int?>("CustomPizzaID")
                         .HasColumnType("int");
 
-                    b.Property<int>("PizzaID")
+                    b.Property<int?>("PizzaID")
                         .HasColumnType("int");
 
                     b.Property<int>("Quantity")
@@ -186,6 +186,13 @@ namespace Pizza_Delievery_System.Migrations
                     b.Property<int>("SauceID")
                         .HasColumnType("int");
 
+                    b.Property<string>("Size")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ToppingID")
+                        .HasColumnType("int");
+
                     b.Property<decimal>("TotalPrice")
                         .HasColumnType("decimal(18,2)");
 
@@ -199,6 +206,8 @@ namespace Pizza_Delievery_System.Migrations
                     b.HasIndex("PizzaBaseID");
 
                     b.HasIndex("SauceID");
+
+                    b.HasIndex("ToppingID");
 
                     b.HasIndex("UserID");
 
@@ -229,6 +238,32 @@ namespace Pizza_Delievery_System.Migrations
                     b.HasIndex("VegetableID");
 
                     b.ToTable("CustomPizzaVegetable");
+                });
+
+            modelBuilder.Entity("Pizza_Delievery_System.Models.DealPizza", b =>
+                {
+                    b.Property<int>("DealPizzaID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("DealPizzaID"));
+
+                    b.Property<int>("DealID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PizzaID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.HasKey("DealPizzaID");
+
+                    b.HasIndex("DealID");
+
+                    b.HasIndex("PizzaID");
+
+                    b.ToTable("DealPizza");
                 });
 
             modelBuilder.Entity("Pizza_Delievery_System.Models.EmailVerificationToken", b =>
@@ -487,6 +522,40 @@ namespace Pizza_Delievery_System.Migrations
                     b.ToTable("PizzaBase");
                 });
 
+            modelBuilder.Entity("Pizza_Delievery_System.Models.Pizza_Deals", b =>
+                {
+                    b.Property<int>("DealID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("DealID"));
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("DealName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Image")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("Isactive")
+                        .HasColumnType("bit");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("DealID");
+
+                    b.ToTable("Pizza_Deals");
+                });
+
             modelBuilder.Entity("Pizza_Delievery_System.Models.Sauce", b =>
                 {
                     b.Property<int>("SauceID")
@@ -522,6 +591,43 @@ namespace Pizza_Delievery_System.Migrations
                     b.HasKey("SauceID");
 
                     b.ToTable("Sauce");
+                });
+
+            modelBuilder.Entity("Pizza_Delievery_System.Models.Toppings", b =>
+                {
+                    b.Property<int>("ToppingID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ToppingID"));
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("IsAvailable")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("LowStockThreshold")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("StockQuantity")
+                        .HasColumnType("int");
+
+                    b.HasKey("ToppingID");
+
+                    b.ToTable("Toppings");
                 });
 
             modelBuilder.Entity("Pizza_Delievery_System.Models.User", b =>
@@ -636,14 +742,12 @@ namespace Pizza_Delievery_System.Migrations
                     b.HasOne("Pizza_Delievery_System.Models.CustomPizza", "CustomPizza")
                         .WithMany()
                         .HasForeignKey("CustomPizzaID")
-                        .OnDelete(DeleteBehavior.NoAction)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.NoAction);
 
                     b.HasOne("Pizza_Delievery_System.Models.Pizza", "Pizza")
                         .WithMany()
                         .HasForeignKey("PizzaID")
-                        .OnDelete(DeleteBehavior.NoAction)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.NoAction);
 
                     b.Navigation("Cart");
 
@@ -672,7 +776,13 @@ namespace Pizza_Delievery_System.Migrations
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
-                    b.HasOne("Pizza_Delievery_System.Models.User", "Users")
+                    b.HasOne("Pizza_Delievery_System.Models.Toppings", "Toppings")
+                        .WithMany()
+                        .HasForeignKey("ToppingID")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.HasOne("Pizza_Delievery_System.Models.User", "User")
                         .WithMany()
                         .HasForeignKey("UserID")
                         .OnDelete(DeleteBehavior.NoAction)
@@ -684,7 +794,9 @@ namespace Pizza_Delievery_System.Migrations
 
                     b.Navigation("Sauce");
 
-                    b.Navigation("Users");
+                    b.Navigation("Toppings");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Pizza_Delievery_System.Models.CustomPizzaVegetable", b =>
@@ -704,6 +816,25 @@ namespace Pizza_Delievery_System.Migrations
                     b.Navigation("CustomPizza");
 
                     b.Navigation("Vegetable");
+                });
+
+            modelBuilder.Entity("Pizza_Delievery_System.Models.DealPizza", b =>
+                {
+                    b.HasOne("Pizza_Delievery_System.Models.Pizza_Deals", "Deal")
+                        .WithMany("DealPizzas")
+                        .HasForeignKey("DealID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Pizza_Delievery_System.Models.Pizza", "Pizza")
+                        .WithMany()
+                        .HasForeignKey("PizzaID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Deal");
+
+                    b.Navigation("Pizza");
                 });
 
             modelBuilder.Entity("Pizza_Delievery_System.Models.EmailVerificationToken", b =>
@@ -783,6 +914,11 @@ namespace Pizza_Delievery_System.Migrations
                         .IsRequired();
 
                     b.Navigation("Orders");
+                });
+
+            modelBuilder.Entity("Pizza_Delievery_System.Models.Pizza_Deals", b =>
+                {
+                    b.Navigation("DealPizzas");
                 });
 #pragma warning restore 612, 618
         }

@@ -11,9 +11,9 @@ namespace Pizza_Delievery_System.Models
 
         public int CartID { get; set; }
 
-        public int PizzaID { get; set; }
+        public int? PizzaID { get; set; }
 
-        public int CustomPizzaID { get; set; }
+        public int? CustomPizzaID { get; set; }
 
         [Required]
         public int Quantity { get; set; }

@@ -1,6 +1,11 @@
+wwwroot\All_Images\ht.jpg
 wwwroot\All_Images\Pizza\27b05576-e86e-406f-a267-0aa4ddb34045 - Chicken Tikka.jpg
 wwwroot\All_Images\Pizza\439d6783-14a7-4c55-8d46-bd0826cb1c29 - Chicken Tikka.jpg
 wwwroot\All_Images\Pizza\47b1e4f5-1020-4e68-aabb-7422ba5aa40e - Margherita Pizza.jpg
+wwwroot\All_Images\Pizza\4d78c76d-29d2-4ec1-9c06-a2cd28c1e11b - BBQ CHCIKEN.webp
+wwwroot\All_Images\Pizza\843b0a5f-79d8-4624-9f37-b74631d7a196 - Four CHeese.webp
+wwwroot\All_Images\Pizza\b0d58b40-336b-4212-a0d8-db89c8a4144e - bulbul-ahmed-5T369KMIPac-unsplash.jpg
+wwwroot\All_Images\Pizza\b9b7706c-0545-4d78-a119-8ea294f97cc2 - Chicken Supreme.webp
 wwwroot\All_Images\Pizza\d6268426-a8f0-4df3-afcb-d0f7430d1462 - Chicken Fajita.jpg
 wwwroot\All_Images\Pizza\e455632c-e31d-4e06-92ae-531493215326 - Chicken Fajita.jpg
 wwwroot\css\site.css
@@ -72,12 +77,10 @@ wwwroot\lib\jquery\dist\jquery.slim.js
 wwwroot\lib\jquery\dist\jquery.slim.min.js
 wwwroot\lib\jquery\dist\jquery.slim.min.map
 wwwroot\lib\jquery\LICENSE.txt
-..\..\..\..\..\Downloads\1.jpg
-..\..\..\..\..\Downloads\2.jpg
-..\..\..\..\..\Downloads\as.jpg
-C:\Users\alian\OneDrive\Desktop\Pizza Delievery System\Pizza_Delievery_System\Pizza_Delievery_System\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
-C:\Users\alian\OneDrive\Desktop\Pizza Delievery System\Pizza_Delievery_System\Pizza_Delievery_System\wwwroot\favicon.ico
 C:\Users\alian\OneDrive\Desktop\Pizza Delievery System\Pizza_Delievery_System\Pizza_Delievery_System\wwwroot\css\site.css
+C:\Users\alian\OneDrive\Desktop\Pizza Delievery System\Pizza_Delievery_System\Pizza_Delievery_System\wwwroot\favicon.ico
+C:\Users\alian\OneDrive\Desktop\Pizza Delievery System\Pizza_Delievery_System\Pizza_Delievery_System\wwwroot\js\site.js
+C:\Users\alian\OneDrive\Desktop\Pizza Delievery System\Pizza_Delievery_System\Pizza_Delievery_System\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 C:\Users\alian\OneDrive\Desktop\Pizza Delievery System\Pizza_Delievery_System\Pizza_Delievery_System\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
 C:\Users\alian\OneDrive\Desktop\Pizza Delievery System\Pizza_Delievery_System\Pizza_Delievery_System\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
 C:\Users\alian\OneDrive\Desktop\Pizza Delievery System\Pizza_Delievery_System\Pizza_Delievery_System\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
@@ -136,4 +139,3 @@ C:\Users\alian\OneDrive\Desktop\Pizza Delievery System\Pizza_Delievery_System\Pi
 C:\Users\alian\OneDrive\Desktop\Pizza Delievery System\Pizza_Delievery_System\Pizza_Delievery_System\wwwroot\lib\jquery\dist\jquery.slim.min.js
 C:\Users\alian\OneDrive\Desktop\Pizza Delievery System\Pizza_Delievery_System\Pizza_Delievery_System\wwwroot\lib\jquery\dist\jquery.slim.min.map
 C:\Users\alian\OneDrive\Desktop\Pizza Delievery System\Pizza_Delievery_System\Pizza_Delievery_System\wwwroot\lib\jquery\LICENSE.txt
-C:\Users\alian\OneDrive\Desktop\Pizza Delievery System\Pizza_Delievery_System\Pizza_Delievery_System\wwwroot\js\site.js

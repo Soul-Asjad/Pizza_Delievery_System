@@ -55,8 +55,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlZXNlXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/alian/OneDrive/Desktop/Pizza Delievery System/Pizza_Delievery_System/Pizza_Delievery_System/Views/CustomPizzaVegetable/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tUGl6emFWZWdldGFibGVcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alian/OneDrive/Desktop/Pizza Delievery System/Pizza_Delievery_System/Pizza_Delievery_System/Views/CustomPizza/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tUGl6emFcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alian/OneDrive/Desktop/Pizza Delievery System/Pizza_Delievery_System/Pizza_Delievery_System/Views/EmailVerificationToken/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1haWxWZXJpZmljYXRpb25Ub2tlblxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/alian/OneDrive/Desktop/Pizza Delievery System/Pizza_Delievery_System/Pizza_Delievery_System/Views/Home/Contact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alian/OneDrive/Desktop/Pizza Delievery System/Pizza_Delievery_System/Pizza_Delievery_System/Views/Home/Custom_Pizza.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDdXN0b21fUGl6emEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/alian/OneDrive/Desktop/Pizza Delievery System/Pizza_Delievery_System/Pizza_Delievery_System/Views/Home/Detail.cshtml]
@@ -107,6 +123,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGl6emFcUGl6emFMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/alian/OneDrive/Desktop/Pizza Delievery System/Pizza_Delievery_System/Pizza_Delievery_System/Views/Pizza_Deals/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGl6emFfRGVhbHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/alian/OneDrive/Desktop/Pizza Delievery System/Pizza_Delievery_System/Pizza_Delievery_System/Views/Sauce/AddSauce.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2F1Y2VcQWRkU2F1Y2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -133,6 +153,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/alian/OneDrive/Desktop/Pizza Delievery System/Pizza_Delievery_System/Pizza_Delievery_System/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alian/OneDrive/Desktop/Pizza Delievery System/Pizza_Delievery_System/Pizza_Delievery_System/Views/Topping/AddTopping.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9wcGluZ1xBZGRUb3BwaW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alian/OneDrive/Desktop/Pizza Delievery System/Pizza_Delievery_System/Pizza_Delievery_System/Views/Topping/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9wcGluZ1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alian/OneDrive/Desktop/Pizza Delievery System/Pizza_Delievery_System/Pizza_Delievery_System/Views/Topping/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9wcGluZ1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alian/OneDrive/Desktop/Pizza Delievery System/Pizza_Delievery_System/Pizza_Delievery_System/Views/Topping/ToppingList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9wcGluZ1xUb3BwaW5nTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/alian/OneDrive/Desktop/Pizza Delievery System/Pizza_Delievery_System/Pizza_Delievery_System/Views/User/Login.cshtml]

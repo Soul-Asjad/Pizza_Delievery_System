@@ -155,9 +155,9 @@
                             <form asp-controller="Cart" asp-action="AddToCart" method="post">
                                 <input type="hidden" name="PizzaId" value="@item.PizzaID" />
                                 <input type="hidden" name="quantity" value="1" />
-                                <button class="btn pizza-add-btn">
-                                    <i class="bi bi-cart-plus me-1"></i> Add
-                                </button>
+                                <a class="btn pizza-add-btn" asp-route-id="@item.PizzaID" asp-action="AddToCart" asp-controller="Cart">
+                                    <i class="bi bi-cart-plus me-1"></i> Add to Cart
+                                </a>
                             </form>
                         </div>
                     </div>
@@ -295,8 +295,8 @@
             </div>
 
             <div class="col-lg-4 text-lg-end">
-                <a asp-controller="Pizza"
-                   asp-action="Customize"
+                <a asp-controller="Home"
+                   asp-action="Custom_Pizza"
                    class="btn primary-pizza-btn shadow-lg mt-3 mt-lg-0">
                     Start Building <i class="bi bi-arrow-right ms-2"></i>
                 </a>

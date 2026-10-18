@@ -7,28 +7,31 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="..\..\..\..\..\Downloads\1.jpg" Link="wwwroot\Photos\1.jpg" />
-    <Content Include="..\..\..\..\..\Downloads\2.jpg" Link="wwwroot\Photos\2.jpg" />
-    <Content Include="..\..\..\..\..\Downloads\as.jpg" Link="wwwroot\Photos\as.jpg" />
+    <Compile Remove="wwwroot\Photos\**" />
+    <Content Remove="wwwroot\Photos\**" />
+    <EmbeddedResource Remove="wwwroot\Photos\**" />
+    <None Remove="wwwroot\Photos\**" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="BCrypt.Net-Next" Version="4.2.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.11">
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.13">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="10.0.11" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="10.0.11">
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="10.0.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="10.0.13">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="System.Security.Cryptography.Pkcs" Version="10.0.13" />
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Views\CustomPizza\" />
+    <Folder Include="wwwroot\All_Images\Deals\" />
     <Folder Include="wwwroot\All_Images\Sauce\" />
     <Folder Include="wwwroot\All_Images\Pizza\" />
-    <Folder Include="wwwroot\Photos\" />
   </ItemGroup>
 
 </Project>

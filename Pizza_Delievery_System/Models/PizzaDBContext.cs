@@ -25,7 +25,9 @@ namespace Pizza_Delievery_System.Models
         public DbSet<Payment> Payment { get; set; }
         public DbSet<EmailVerificationToken> EmailVerificationToken { get; set; }
         public DbSet<PasswordResetToken> PasswordResetToken { get; set; }
-
+        public DbSet<Pizza_Deals> Pizza_Deals { get; set; }
+        public DbSet<DealPizza> DealPizza { get; set; }
+        public DbSet<Toppings> Toppings { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -59,7 +61,7 @@ namespace Pizza_Delievery_System.Models
             // =========================
 
             modelBuilder.Entity<CustomPizza>()
-                .HasOne(cp => cp.Users)
+                .HasOne(cp => cp.User)
                 .WithMany()
                 .HasForeignKey(cp => cp.UserID)
                 .OnDelete(DeleteBehavior.NoAction);
@@ -238,6 +240,16 @@ namespace Pizza_Delievery_System.Models
                 .HasOne(cpv => cpv.Vegetable)
                 .WithMany()
                 .HasForeignKey(cpv => cpv.VegetableID)
+                .OnDelete(DeleteBehavior.NoAction);
+
+            // =========================
+            // Topping → CUSTOM PIZZA
+            // =========================
+
+            modelBuilder.Entity<CustomPizza>()
+                .HasOne(cp => cp.Toppings)
+                .WithMany()
+                .HasForeignKey(cp => cp.ToppingID)
                 .OnDelete(DeleteBehavior.NoAction);
         }
     }
